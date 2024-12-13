@@ -3,86 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy New Year</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #000428, #004e92);
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .container {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        p {
-            font-size: 1.5rem;
-            margin-top: 10px;
-            animation: fadeIn 4s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .video-container {
-            margin-top: 20px;
-            animation: scaleIn 2s ease-in-out;
-        }
-
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 1rem;
-            font-style: italic;
-            animation: fadeIn 5s ease-in-out;
-        }
-    </style>
+    <title>FFHX</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1060573121827875"
+     crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>🎉 Happy New Year 2025🎉</h1>
-        <p>नया साल लाए खुशियों का खजाना, दूर हों सारे दुख और पुराना फसाना। नया साल 2025 की शुभकामनाएं!</p>
-        <p>Cheers to a new year and another chance for us to get it right. Happy New Year 2025!</p>
-        <p>हर साल आता है, हर साल जाता है। इस नए साल में आपको वो सब मिले, जो आपका दिल चाहता है। नया साल मुबारक हो!</p>
-        <p>As the New Year dawns, I hope it is filled with the promises of a brighter tomorrow. Happy New Year!</p>
-        <div class="video-container">
-            <video width="320" height="240" autoplay loop muted>
-                <source src="https://cdn.pixabay.com/video/2024/12/08/245661_large.mp4" type="video/mp4">
-            </video>
+            <div class="homenav" id="hmv-acc-info">Account Info<img class="arr-right-home-nav" src="angle-right.png"></div>
+            </div>
         </div>
+        <div id="srvc-log-lay">
+            <div id="lks-header">
+                <button class="back-btn-unv" id="srv-lgs-back-btn">Back</button>
+            </div>
+            <div id="lgsholder">
+                
+            </div>
+        </div>
+        <div id="trial-dvs">
+            <button class="back-btn-unv" id="trls-lks-back-btn">Back</button>
+            <div id="trlslks-hdrs">
+                <input id="lks-trial-input" type="number" placeholder="Enter Uid !">
+            <button id="uid-trial-sb-btn">Submit</button>
+            </div>
+        </div>
+        <div id="acc-info-lay">
+            <button class="back-btn-unv" id="acc-info-back-btn">Back</button>
+            <div id="acc-info-header">
+                <input placeholder="Game UID" type="number" id="info-uid-inp" required>
+                <button id="inf-sb-btn">Get Info</button>
+            </div>
+            <p style="font-size: 10px;">*Slow mode is On 1 request/Minutes</p>
+            <div id="id-info-data-div">
+                <div id="upper-info"></div>
+                <div id="cloth-img-div"></div>
+                <div id="lower-info"></div>
+                <div id="av-bn-div"></div>
+                <div id="eq-skin-div"></div>
+                <div id="bottom-info"></div>
+            </div>
+        </div>  
+            </div>
+            <div id="buynslacc">
+                <div id="ehadbs">
+                    <button class="jjh" id="buy-acc-btn">Buy</button>
+                    <button class="jjh" id="sell-acc-btn">Sell</button>
+                </div>
+        </div>
+        <button id="log-out-btn">Log Out</button>
     </div>
-    <div class="footer">
-        May this year bring joy, happiness, and success to everyone!
-    </div>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
